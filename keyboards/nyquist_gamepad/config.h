@@ -1,8 +1,5 @@
 /*
-This is the c configuration file for the keymap
-
-Copyright 2012 Jun Wako <wakojun@gmail.com>
-Copyright 2015 Jack Humbert
+Copyright 2017 Danny Nguyen <danny@hexwire.com>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -18,25 +15,13 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef CONFIG_USER_H
-#define CONFIG_USER_H
+#ifndef CONFIG_H
+#define CONFIG_H
 
-#include "../../config.h"
+#include "config_common.h"
 
-#define USE_SERIAL
-
-#undef I2C_MASTER_LEFT
-#undef I2C_MASTER_RIGHT
-
-#define EE_HANDS
-
-/* ws2812 RGB LED */
-#define RGB_DI_PIN D7
-#define RGBLIGHT_TIMER
-#define RGBLED_NUM 8   // Number of LEDs
-#define RGBLIGHT_ANIMATIONS
-#define RGBLIGHT_HUE_STEP 10
-#define RGBLIGHT_SAT_STEP 17
-#define RGBLIGHT_VAL_STEP 17
-
+#ifdef SUBPROJECT_rev1
+    #include "rev1/config.h"
 #endif
+
+#endif  // CONFIG_H
