@@ -4,7 +4,9 @@ JNAO
 An no-frills 5x12 or 4x12 ortholinear keyboard
 
 Keyboard Maintainer: That-Canadian
+
 Hardware Supported: JNAO PCB rev1
+
 Hardware Availability: [SpaceCat](https://spacecat.design) and [Keeb.io](https://keeb.io/)
 
 Make example for this keyboard (after setting up your build environment):
